@@ -39,7 +39,7 @@ btnSubmit.addEventListener('click', async function() {
         'images': dataURLs
     };
 
-    let response = await fetch('http://kcmerge.herokuapp.com/postdata', {
+    let response = await fetch('https://kcmerge.herokuapp.com/postdata', {
         method: 'POST',
         headers: {'Content-Type': 'application/json;charset=utf-8'},
         body: JSON.stringify(dataSend)
